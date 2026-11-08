@@ -27,9 +27,9 @@ between proceeds and net book value is a gain or loss.
   cost model or revaluation model after recognition. [IFRS, IAS 16]
 - Other methods exist (e.g. declining balance); immaterial purchases are expensed. [AMS ch.11]
 - Intangibles amortised over the shorter of legal life and expected useful life. [AMS ch.12]
-- [IN] Companies Act Schedule II prescribes useful lives (SLM or WDV); Income-tax Act uses
-  block-of-assets WDV rates with half-rate if put to use < 180 days in the year. Book and tax
-  depreciation therefore differ. Verify rates against official text.
+- [IN] Companies Act Schedule II prescribes useful lives (table in india/companies-act-icai.md);
+  income-tax uses block-of-assets WDV rates with half-rate if put to use < 180 days in the year
+  [verify under the Income-tax Act 2025]. Book and tax depreciation therefore differ.
 
 ## Formulas
 - SLM annual depreciation = (Cost − Salvage) / Useful life (years)

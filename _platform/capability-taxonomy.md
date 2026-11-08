@@ -53,4 +53,4 @@ Format: `AREA-NAME`. Keep descriptions neutral (no vendor wording).
 | RPT-ANALYSIS | Ratio analysis | Liquidity, profitability, leverage, turnover dashboards |
 | BUD-BUDGET | Budgeting | Budgets, budget vs actual, cash forecast |
 | SYS-AUDIT | Audit trail | Immutable edit log, period lock, auditor access |
-| SYS-FOREX | Multi-currency | Foreign-currency parties/banks, rates, period-end revaluation |
+| SYS-FOREX | Multi-currency | OUT OF SCOPE (India-only product). Kept for mapping if an analysed app has it. |

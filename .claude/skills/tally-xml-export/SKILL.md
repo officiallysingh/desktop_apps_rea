@@ -9,7 +9,7 @@ to read it. **Export requests only**: never Import, Alter, Delete or Cancel (the
 
 ## Preconditions
 - TallyPrime is running with the company open, and its server port is already enabled
-  (Help > Settings > Connectivity: "TallyPrime acts as Server", port 9000).
+  (F1 Help > Settings > Advanced Configuration: TallyPrime acts as HTTP server, default port 9000).
 - If it is NOT enabled, do not change the setting yourself: that is a change to the app's
   configuration. Ask the user; it is their decision.
 
@@ -35,9 +35,13 @@ curl -s -X POST http://localhost:9000 -H "Content-Type: text/xml" \
 | `stock-summary.xml` | Stock summary report |
 | `company-info.xml` | Companies loaded |
 
-The request layout follows Tally's integration documentation. If a request returns an error or
-an empty envelope, check the current TallyPrime XML integration docs and adjust (report names
-and variables can differ between releases). Inline TDL in a request may define a read-only
+Request layout follows Tally's current XML integration docs (help.tallysolutions.com/xml-integration):
+`HEADER` = `VERSION` 1, `TALLYREQUEST` Export, `TYPE` Data | Collection | Object | Function, `ID` =
+report/collection name; `BODY/DESC/STATICVARIABLES` (e.g. `SVCURRENTCOMPANY`, `SVFROMDATE`,
+`SVTODATE`) and optional `FETCHLIST/FETCH` to limit fields. `SVEXPORTFORMAT $$SysName:XML` and the
+`YYYYMMDD` date format are common practice but not shown in that page: if a request errors,
+remove/adjust them. The legacy `EXPORTDATA/REQUESTDESC/REPORTNAME` layout isn't documented there
+for exports, so it is not used. Inline TDL in a request may define a read-only
 collection for specific fields; it must never contain actions that write.
 
 ## What to extract

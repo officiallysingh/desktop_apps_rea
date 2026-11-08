@@ -14,6 +14,7 @@ Used to (1) check business rules found by reverse engineering, (2) find features
 ## Layout
 - `concepts/`  accounting concepts and rules (double entry, inventory valuation, depreciation, ...)
 - `standards/` standards and frameworks (IFRS/Ind AS, EPCIS, controls)
+- `india/`     Indian law and formats: GST, e-invoice/e-way bill, income tax/TDS, Companies Act, ICAI
 - `benchmarks/` feature and UX benchmarks from other products (e.g. QuickBooks)
 - `index.md`   topic → note → capability IDs → sources
 - `sources.md` every source used, with short name

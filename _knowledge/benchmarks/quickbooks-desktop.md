@@ -1,6 +1,6 @@
 ---
 topic: QuickBooks Desktop 2024 feature and UX benchmark
-capabilities: [CO-COMPANY, LED-MASTER, ITM-MASTER, PTY-MASTER, VCH-SALE, ORD-SALES, ORD-PURCHASE, VCH-PURCHASE, VCH-PAYMENT, VCH-RECEIPT, VCH-RETURN, STK-INVENTORY, BNK-RECON, PAY-PAYROLL, VCH-JOURNAL, RPT-FINANCIAL, BUD-BUDGET, USR-ROLES, SYS-AUDIT, SYS-BACKUP, SYS-FOREX, CRD-REMIND]
+capabilities: [CO-COMPANY, LED-MASTER, ITM-MASTER, PTY-MASTER, VCH-SALE, ORD-SALES, ORD-PURCHASE, VCH-PURCHASE, VCH-PAYMENT, VCH-RECEIPT, VCH-RETURN, STK-INVENTORY, BNK-RECON, PAY-PAYROLL, VCH-JOURNAL, RPT-FINANCIAL, BUD-BUDGET, USR-ROLES, SYS-AUDIT, SYS-BACKUP, CRD-REMIND]
 sources: [QB]
 ---
 # QuickBooks Desktop 2024 — benchmark
@@ -19,7 +19,7 @@ Accounting concepts in its Book 1 duplicate notes already in `concepts/` and are
 | Masters | Profile lists (terms, ship-via, customer types, sales reps) | Credit days, transport, salesman | Book 2 ch.2 |
 | Preferences | Account numbers on/off; date warnings; **closing date** (password to change prior periods) | Period lock / F11 features | Book 2 ch.3 |
 | Preferences | Finance charges on overdue balances (rules, auto calculation) | Interest on overdue | Book 2 ch.3; Book 3 ch.1 |
-| Preferences | Multiple currencies; reminders; integrated payments | Forex, reminders, UPI | Book 2 ch.3 |
+| Preferences | Multiple currencies (out of scope for us); reminders; integrated payments | Reminders, UPI | Book 2 ch.3 |
 | Sales | Estimates → invoices; time billing (timesheets onto invoices); sales receipts (cash sale); credit memos; receive payments; email/print invoices; template **layout designer** | Quotation, invoice, POS, credit note, receipt, print designer | Book 3 ch.1 |
 | Purchases | Purchase order → item receipt → bill (or receipt+bill together) → pay bills | PO → GRN → purchase invoice → payment | Book 3 ch.2 |
 | Inventory | Physical count and value adjustments; assemblies (simple manufacturing); multiple inventory locations; inventory reports | Stock journal, godowns, BOM | Book 3 ch.3 |

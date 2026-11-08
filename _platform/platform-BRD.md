@@ -1,6 +1,6 @@
 # Platform BRD (draft outline)
 
-1. Purpose and scope
+1. Purpose and scope (India only: INR, Indian tax law; no multi-currency)
 2. Target users and personas
 3. Editions and modules (see editions.md)
 4. Functional requirements by capability ID

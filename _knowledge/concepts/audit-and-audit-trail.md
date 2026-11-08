@@ -14,9 +14,9 @@ source documents and every change to who made it. [ANA ch.11]
 - Types of auditors: external/independent, internal, government; standard (unqualified)
   opinion vs qualified, adverse, disclaimer. [ANA ch.11]
 - Audits are useful even when not mandatory: lenders and investors rely on them. [ANA ch.11]
-- [IN] Companies (Accounts) Rules require companies' accounting software to keep an audit trail
-  (edit log) of every change that cannot be disabled (effective FY 2023-24). Tax audit u/s 44AB
-  applies above turnover thresholds. Verify against official text.
+- [IN] Proviso to Rule 3(1), Companies (Accounts) Rules: from FY starting 1 Apr 2023 accounting
+  software must keep an audit trail and edit log that cannot be disabled; retained 8 years;
+  auditors report under Rule 11(g). Details: india/companies-act-icai.md.
 
 ## What this means for our product
 - Immutable audit log: who, when, what changed (before/after), from which device; cannot be

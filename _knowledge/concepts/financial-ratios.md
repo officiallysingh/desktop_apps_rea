@@ -45,6 +45,10 @@ Ratios turn statements into comparable signals: **liquidity** (can it pay short-
 - Ratios need a benchmark: past periods, similar businesses or plan; interpret with caution. [FADM ch.8]
 - Working capital management aims to shorten the operating cash cycle without undue risk. [FADM ch.8]
 
+## [IN] Schedule III ratio disclosure
+Companies disclose 11 prescribed ratios with explanations for > 25% change — see
+india/companies-act-icai.md.
+
 ## Rules of thumb (vary by industry; compare with own history and industry peers)
 - Current ratio > 2.0; quick ratio ≥ 1.5 (one source's guide; too high can mean idle cash). [ANA ch.8]
 - Ratios are used by outsiders: bankers (current ratio, working capital) for loans; suppliers
