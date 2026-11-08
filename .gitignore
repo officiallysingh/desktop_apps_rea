@@ -1,0 +1,64 @@
+# Raw reverse-engineering material: NEVER leaves the analysis machine
+_raw/
+
+# Vendor binaries, installers, databases (must never be committed anywhere)
+*.exe
+*.dll
+*.msi
+*.cab
+*.ocx
+*.sys
+*.mdf
+*.ldf
+*.mdb
+*.accdb
+*.fdb
+*.gdb
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.apk
+*.xapk
+
+# Captures and dumps
+*.pml
+*.etl
+*.pcap
+*.pcapng
+*.saz
+*.dmp
+*.trc
+*.xel
+*.har
+*.mp4
+*.mkv
+
+# Ghidra / IDA / tooling projects
+*.gpr
+*.rep/
+*.idb
+*.i64
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+__pycache__/
+.venv/
+node_modules/
+
+
+# Screens/reports of apps with REAL client data stay in _raw; never commit them from app folders
+*/03-screens/*.png
+*/03-screens/*.jpg
+*/03-screens/*.ui.json
+*/06-reports/sample-outputs/*
+!*/06-reports/sample-outputs/.gitkeep
+
+# Reference books (_reference/books) and extracted text (_reference/text) ARE committed (private repo).

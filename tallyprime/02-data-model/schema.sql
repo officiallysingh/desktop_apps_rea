@@ -1,0 +1,1 @@
+-- Schema in OUR domain names. Vendor names live only in _raw/<app>/name-mapping.md

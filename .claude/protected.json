@@ -1,0 +1,39 @@
+{
+  "_comment": "What the guard protects. Any change to a path, registry key, process or service matching these is blocked. Paths inside this repo are never protected. /inventory adds entries per app.",
+  "keywords": [
+    "kamra",
+    "bahikhata",
+    "bahi-khata",
+    "bahi khata",
+    "busywin",
+    "busy infotech",
+    "/busy/",
+    "busy.exe",
+    "margerp",
+    "marg erp",
+    "/marg/",
+    "tally",
+    "computax",
+    "compuoffice"
+  ],
+  "paths": [],
+  "db_services": [
+    "mssql",
+    "sqlserver",
+    "sqlbrowser",
+    "sqlwriter",
+    "sqlagent",
+    "firebird",
+    "fbserver",
+    "mysql",
+    "postgres"
+  ],
+  "db_processes": [
+    "sqlservr",
+    "fbserver",
+    "fb_inet_server",
+    "firebird",
+    "mysqld",
+    "postgres"
+  ]
+}
