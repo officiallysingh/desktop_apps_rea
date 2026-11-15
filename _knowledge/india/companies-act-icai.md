@@ -48,8 +48,8 @@ as_of: 2026-11-08
   receivables turnover, trade payables turnover, net capital turnover, net profit, ROCE, return
   on investment) with explanation for > 25% change. [verify against MCA text]
 - MSME dues: disclosure of amounts due to micro/small enterprises; under income tax, payments to
-  micro/small suppliers beyond the agreed/45-day limit are disallowed until paid (s.43B(h),
-  1961 Act, from FY 2023-24). [verify position under 2025 Act]
+  micro/small suppliers beyond the MSMED Act s.15 limit (agreed ≤ 45 days, else 15 days) are
+  deductible only when paid (1961 s.43B(h) → 2025 Act s.37(2)(g), confirmed in the Act text).
 
 ## ICAI Accounting Standards (non-Ind AS entities) most relevant to SMB software
 | AS | Topic | Software impact |

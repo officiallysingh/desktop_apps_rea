@@ -18,7 +18,11 @@
 | IFRS / Ind AS standards for software | standards/ifrs-ind-as.md | RPT-FINANCIAL, STK-INVENTORY, FA-ASSETS | IFRS |
 | QuickBooks Desktop benchmark | benchmarks/quickbooks-desktop.md | many (see note) | QB |
 | EPCIS traceability events | standards/epcis-traceability.md | STK-BATCH, STK-INVENTORY, MFG-BOM | EPCIS |
-| GST core rules (invoice, rates, ITC, notes, RCM, thresholds) | india/gst-core-rules.md | GST-CALC, GST-RETURNS, VCH-* | CGST-ACT, CGST-RULES, CBIC-NOTIF, GSTN-ADV |
+| GST core rules (invoice, value, time of supply, rates, ITC, notes, RCM, thresholds) | india/gst-core-rules.md | GST-CALC, GST-RETURNS, VCH-* | CGST-ACT, CGST-RULES, CBIC-NOTIF, GSTN-ADV, GSTRR-2017 |
 | E-invoice, e-way bill, GST return formats | india/gst-einvoice-ewaybill-returns.md | GST-EINV, GST-RETURNS | IRP-SCHEMA, GSTN-RETURNS |
-| Income tax, TDS/TCS (2025 Act transition) | india/income-tax-tds.md | TAX-ITR, TAX-TDS, VCH-PAYMENT | ITA-2025, IT-RULES-2026 |
+| Income tax, TDS/TCS (2025 Act; s.393 table) | india/income-tax-tds.md | TAX-ITR, TAX-TDS, VCH-PAYMENT | ITA-2025-TEXT, ITA-2025, IT-RULES-2026 |
 | Companies Act Sch. II/III, audit trail rule, ICAI AS | india/companies-act-icai.md | FA-ASSETS, RPT-FINANCIAL, SYS-AUDIT | CA-2013-SCH-II, CO-ACCTS-RULES, ICAI-AS |
+| Inventory management practice | concepts/inventory-management.md | STK-INVENTORY, ORD-PURCHASE, RPT-STOCK | MULLER |
+| Indian special accounts (interest, branches, departments, partnership, incomplete records) | concepts/indian-special-accounts.md | CRD-UDHAAR, RPT-LEDGER, CO-COMPANY | ICAI-AA2 |
+| Posting engine patterns | design/posting-engine-patterns.md | LED-MASTER, VCH-*, STK-INVENTORY, GST-CALC | FOWLER-AP |
+| Sync and replication design | design/sync-and-replication.md | SYS-SYNC, VCH-NUMBERING | DDIA |

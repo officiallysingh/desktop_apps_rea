@@ -15,7 +15,8 @@ Steps:
      is fine; reproducing implementation is not.
    - **No vendor identifiers**: no vendor table, column, class, method, form, resource or file
      names. Compare against `_raw/<app>/name-mapping.md`. Product names in headings and
-     `_platform/apps.md` are fine.
+     `_platform/apps.md` are fine. **Exception:** `<app>/interop/` may hold data-format identifiers
+     for migration; there, check only that no vendor code, client data or licence internals appear.
    - **No client data**: no real party names, addresses, phone numbers, GSTIN/PAN, amounts or
      invoice numbers seen on screens or in the database. Examples must be obviously made up.
    - **No copied assets**: no screenshots, icons, report layouts or text copied from the app.

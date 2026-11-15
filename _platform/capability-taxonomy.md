@@ -54,3 +54,4 @@ Format: `AREA-NAME`. Keep descriptions neutral (no vendor wording).
 | BUD-BUDGET | Budgeting | Budgets, budget vs actual, cash forecast |
 | SYS-AUDIT | Audit trail | Immutable edit log, period lock, auditor access |
 | SYS-FOREX | Multi-currency | OUT OF SCOPE (India-only product). Kept for mapping if an analysed app has it. |
+| IO-MIGRATE | Data migration | Import from competitor apps: extract, map, validate, load, reconcile |

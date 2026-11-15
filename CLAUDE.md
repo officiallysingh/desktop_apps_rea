@@ -39,6 +39,9 @@ Everything else on the machine (installing tools, settings, files outside the ap
 1. **Clean-room.** Everything under `<app>/` and `_platform/` describes behaviour in OUR words.
    Never copy decompiled code, vendor table/column/class names, branding, icons, text or UI
    assets there. Vendor-to-our-name mappings live only in `_raw/<app>/name-mapping.md`.
+   **Exception:** `<app>/interop/` may contain the data-format identifiers needed to read
+   customers' own data for migration (see `_platform/data-migration.md`) — formats only, never
+   vendor code, client data or licence internals.
 2. **`_raw/` never leaves this machine.** It is git-ignored (vendor code + client data).
    Never `git add -f` it. Never commit binaries, installers, databases, captures or screenshots.
 3. **No circumvention.** Never bypass, patch or analyse licence checks, dongles, anti-debug or
@@ -67,6 +70,7 @@ _platform/             cross-app synthesis: taxonomy, matrix, overlaps, domain m
   05-business-rules/   one file per rule area (gst, rounding, numbering, validations, ...)
   06-reports/          <report>.md, sample-outputs/ (from sample data only)
   07-integrations/     sync API, printing, SMS/WhatsApp, import/export
+  interop/             data formats + export options for migration (vendor identifiers allowed)
   08-nfr.md            performance, backup, licensing model, multi-user, installer
   ux-friction.md       pain points with counts (keystrokes, clicks, waits)
 scripts/windows/       setup and helper PowerShell scripts

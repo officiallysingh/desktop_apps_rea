@@ -41,6 +41,9 @@ Opening 10 @ 100; buy 10 @ 120; sell 15.
 - FIFO COGS = 10×100 + 5×120 = 1,600; closing = 5×120 = 600
 - Weighted average = (1,000+1,200)/20 = 110 → COGS 1,650; closing 550
 
+## See also
+- Replenishment, locations, cycle counting: `inventory-management.md`.
+
 ## What this means for our product
 - Company setting: valuation method (FIFO / weighted average / moving average); no LIFO for India.
 - Perpetual stock ledger per item (and per godown/batch) with quantity and value; stock

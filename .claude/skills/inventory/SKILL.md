@@ -16,5 +16,7 @@ Inventory the installed app `$ARGUMENTS`. Follow "Rule zero" in CLAUDE.md.
 4. Find the database: engine, location or connection string, version. For file DBs, copy them to
    `_raw/<app>/db-copies/` (ideally with the app closed, for a consistent copy).
 5. Note network endpoints from strings/config.
-6. Write `<app>/01-tech-stack.md`; raw listings go to `_raw/<app>/dumps/`.
-7. Update `<app>/PROGRESS.md` and recommend the next step (usually `/schema`).
+6. Record data locations and the app's built-in export options (menu path, format, coverage)
+   in `<app>/interop/README.md` — needed for data migration.
+7. Write `<app>/01-tech-stack.md`; raw listings go to `_raw/<app>/dumps/`.
+8. Update `<app>/PROGRESS.md` and recommend the next step (usually `/schema`).

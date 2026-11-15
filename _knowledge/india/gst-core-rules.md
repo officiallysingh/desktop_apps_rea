@@ -1,7 +1,7 @@
 ---
 topic: GST core rules for billing and accounting software
 capabilities: [GST-CALC, GST-RETURNS, GST-EINV, VCH-SALE, VCH-PURCHASE, VCH-RETURN, VCH-NUMBERING, ITM-MASTER, PTY-MASTER, PRT-INVOICE]
-sources: [CGST-ACT, CGST-RULES, CBIC-NOTIF, GSTN-ADV]
+sources: [CGST-ACT, CGST-RULES, CBIC-NOTIF, GSTN-ADV, GSTRR-2017]
 as_of: 2026-11-08
 ---
 # GST core rules [IN]
@@ -44,6 +44,24 @@ its statutory source. **Re-verify against the CBIC/GSTN text before building**; 
 - Supplier state = place of supply → CGST + SGST/UTGST (half each); different → IGST.
 - Place of supply for goods is generally where movement terminates; services have specific
   rules (e.g. B2B → recipient's location). Exports/SEZ supplies are zero-rated. [verify per case]
+
+## Value of supply — CGST s.15 [GSTRR-2017 ch.5]
+- Value = transaction value when price is the sole consideration and parties are not related.
+- Included: taxes other than GST, incidental expenses charged, **interest/late fee/penalty for
+  delayed payment**, subsidies linked to price (except government subsidies).
+- Excluded: discounts given before/at supply and shown on the invoice; post-supply discounts only
+  if agreed beforehand, linked to specific invoices, and the recipient reverses ITC.
+- Related/distinct persons (e.g. own branches in other states): open-market value; if recipient
+  can take full ITC, invoice value is accepted. [verify current Rule 28]
+
+## Time of supply — CGST ss.12–13 [GSTRR-2017 ch.19]
+- Goods: earlier of invoice date (or last date invoice was due) and payment receipt; payment
+  date = earlier of entry in books and credit to bank. **Correction:** since Notification
+  66/2017-CT (Nov 2017) GST on **advances for goods** is not payable by non-composition
+  taxpayers; it still applies to **advances for services**. [the 2017 book predates this]
+- Excess received up to ₹1,000 over the invoice may be taxed at invoice date.
+- Reverse charge and services have separate time-of-supply rules (s.12(3), s.13).
+- Invoice for goods must be issued before/at removal or delivery (s.31(1)). [GSTRR-2017 ch.19]
 
 ## Input tax credit — CGST s.16
 - Conditions (s.16(2)): tax invoice/debit note in hand; goods/services received; supplier's
@@ -88,3 +106,6 @@ its statutory source. **Re-verify against the CBIC/GSTN text before building**; 
 - Because GSTR-1 now drives a non-editable GSTR-3B, GSTR-1 correctness before filing is critical:
   pre-filing validation report.
 - Composition-dealer mode: bill of supply, no tax lines, no ITC.
+- Advance receipts: tax on advances for services (with adjustment when invoiced); none for goods.
+- Late-payment interest charged to customers is taxable value: interest invoices carry GST.
+- Post-sale discount credit notes: only if pre-agreed and linked to invoices.

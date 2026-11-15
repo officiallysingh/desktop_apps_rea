@@ -13,5 +13,7 @@ Document the data model of `$ARGUMENTS`. Follow "Rule zero" and "Real client dat
 3. Build `_raw/<app>/name-mapping.md`: vendor table/column → our domain name.
 4. Write `<app>/02-data-model/schema.sql` with OUR names, `er.mmd` (Mermaid erDiagram) and
    `entity-dictionary.md` (purpose, key fields, relationships, capability IDs, enum meanings).
-5. Note: financial years, multi-company, soft deletes, audit columns, numbering, tax storage.
-6. Update `<app>/PROGRESS.md`.
+5. Fill the field mapping in `<app>/interop/README.md` (source table/field → our migration
+   format) for masters, opening balances, outstanding bills, stock, vouchers.
+6. Note: financial years, multi-company, soft deletes, audit columns, numbering, tax storage.
+7. Update `<app>/PROGRESS.md`.

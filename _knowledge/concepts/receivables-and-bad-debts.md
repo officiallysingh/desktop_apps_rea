@@ -30,6 +30,9 @@ allowance and the receivable. Collection speed is measured by receivables turnov
 | Direct write-off (small businesses) | Bad debts expense | Customer (A/R) |
 | Recovery of a written-off debt | Bank | Bad debts recovered (income) |
 
+## See also
+- Interest on party accounts, average due date, account current: `indian-special-accounts.md`.
+
 ## What this means for our product
 - Party ledger with credit limit, credit days, and ageing buckets (0–30, 31–60, 61–90, 90+).
 - Bill-by-bill tracking (which invoice a receipt settles) for accurate ageing and interest.

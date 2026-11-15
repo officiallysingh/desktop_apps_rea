@@ -29,7 +29,8 @@ between proceeds and net book value is a gain or loss.
 - Intangibles amortised over the shorter of legal life and expected useful life. [AMS ch.12]
 - [IN] Companies Act Schedule II prescribes useful lives (table in india/companies-act-icai.md);
   income-tax uses block-of-assets WDV rates with half-rate if put to use < 180 days in the year
-  [verify under the Income-tax Act 2025]. Book and tax depreciation therefore differ.
+  (2025 Act s.33; additional depreciation 20%/10% confirmed; half-rate rule for normal
+  depreciation to verify in s.33). Book and tax depreciation therefore differ.
 
 ## Formulas
 - SLM annual depreciation = (Cost − Salvage) / Useful life (years)

@@ -22,6 +22,7 @@ TEXT_EXT = {".md", ".sql", ".mmd", ".json", ".txt", ".csv", ".kt", ".java", ".xm
 FORBIDDEN_EXT = {".exe", ".dll", ".msi", ".mdb", ".accdb", ".mdf", ".ldf", ".fdb", ".gdb", ".db", ".sqlite",
                  ".sqlite3", ".dbf", ".bak", ".pml", ".pcap", ".pcapng", ".saz", ".dmp", ".har", ".apk"}
 SKIP_DIRS = ("_raw/", "_reference/", ".git/", "_templates/", "_knowledge/_template.md")
+INTEROP = "/interop/"  # vendor identifiers allowed here (data-format specs for migration); PII still checked
 
 PATTERNS = {
     "PAN": re.compile(r"\b[A-Z]{3}[PCHFATBLJG][A-Z][0-9]{4}[A-Z]\b"),
@@ -100,7 +101,7 @@ def main():
                     for m in rx.finditer(line):
                         if not ALLOW_VALUES.search(m.group(0)):
                             findings.append((rel_n, no, kind, m.group(0)))
-                if term_re:
+                if term_re and INTEROP not in "/" + rel_n:
                     for m in term_re.finditer(line):
                         findings.append((rel_n, no, "vendor identifier", m.group(0)))
     if not findings:
