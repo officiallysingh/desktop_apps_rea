@@ -44,8 +44,12 @@ Everything else on the machine (installing tools, settings, files outside the ap
    vendor code, client data or licence internals.
 2. **`_raw/` never leaves this machine.** It is git-ignored (vendor code + client data).
    Never `git add -f` it. Never commit binaries, installers, databases, captures or screenshots.
-3. **No circumvention.** Never bypass, patch or analyse licence checks, dongles, anti-debug or
-   licence encryption. Skip those code paths and note "licensing — out of scope".
+3. **Licensing.** Analyse licence checks, dongles and the edition model freely to document how the
+   product is packaged (useful for the BRD). Debugging and runtime observation of licensed copies,
+   including getting past anti-debug to observe, is fine. The one line to hold: don't defeat licence
+   protection to run the software unlicensed, and don't strip copy protection for redistribution —
+   that is a Copyright Act s.65A offence and breaks the clean-room position; nothing on the roadmap
+   needs it.
 4. **Evidence for every rule.** Each business rule, calculation or validation cites evidence:
    `[evidence: screen <name>]`, `[evidence: sql _raw/<app>/captures/<file>]`,
    `[evidence: fn <address or method> in _raw/<app>/...]`, or `[evidence: observed]`.
@@ -79,12 +83,15 @@ _reference/            books/ (PDF) and text/ (extracted) — read text/ for dee
 ```
 
 ## Skills and agents (`.claude/`)
-- Skills (auto-used when a task matches, or type `/name`): `new-app`, `inventory`, `schema`,
-  `screens`, `workflow`, `synthesize`, `knowledge`, `checkpoint`, `tally-xml-export`,
-  `db-schema-dump`.
+- Skills (auto-used when a task matches, or type `/name`):
+  - analysis: `new-app`, `inventory`, `schema`, `screens`, `workflow`, `synthesize`, `knowledge`,
+    `checkpoint`, `tally-xml-export`, `db-schema-dump`
+  - specs: `brd`, `acceptance-tests`, `ux-teardown`, `india-validators` (reference)
 - Subagents: `clean-room-reviewer` (run before every commit), `rule-checker` (run after
   business rules change). They review independently; act on their findings.
 - `python scripts/clean_room_check.py` scans changed files for client data and vendor names.
+- `python scripts/traceability_check.py` lists gaps (rules without evidence/capability, matrix
+  holes, overlaps without a design) before writing the BRD.
 
 ## Workflow per app (in order)
 1. `/new-app <slug>` — scaffold folders, register in `_platform/apps.md`.

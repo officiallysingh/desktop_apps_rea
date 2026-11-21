@@ -36,7 +36,7 @@ Format: `AREA-NAME`. Keep descriptions neutral (no vendor wording).
 | SYS-BACKUP | Backup / restore | Local and cloud backup |
 | SYS-SYNC | Sync / mobile view | Multi-device sync, mobile companion |
 | SYS-LANG | Languages | Hindi/regional UI and printing |
-| SYS-LICENSE | Licensing model | Editions, activation (observed behaviour only) |
+| SYS-LICENSE | Licensing model | Editions, activation, packaging (documented from behaviour) |
 | ORD-SALES | Sales orders / challans | Quotations, orders, delivery challans |
 | ORD-PURCHASE | Purchase orders | Purchase orders, goods receipt |
 | POS-BILLING | Counter / POS billing | Fast billing, barcode, cash drawer |

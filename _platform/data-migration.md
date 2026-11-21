@@ -51,7 +51,7 @@ Extract (connector per source app, on the Windows PC)
 | CompuTax | App's own export (to verify) | Read-only read of its data |
 | Any other app | Our Excel/CSV import templates (masters, opening balances, bills, stock) | — |
 
-## Legal and clean-room position
+## Clean-room and interoperability
 - Reading a customer's **own data** from their files, with their consent, to move it to our
   product is interoperability. Knowing the file/database layout is required for that.
 - Therefore vendor identifiers (table/column/field names, file formats) are **allowed only in
@@ -59,8 +59,8 @@ Extract (connector per source app, on the Windows PC)
   of every other spec and out of the core product code.
 - In the product repo, connectors live in a separate `migration-connectors` module that depends on
   the core, never the other way round. Get legal review of connector approach before launch.
-- Never bypass licence protection or encryption of the source app's data; if data is encrypted,
-  use the app's own export path.
+- For the customer's own encrypted data, prefer the app's own export path over cracking the
+  vendor's protection — it is simpler and keeps the clean-room position clean.
 
 ## Product requirements (for the BRD)
 - Migration wizard (desktop): detect installed source apps and their companies on this PC

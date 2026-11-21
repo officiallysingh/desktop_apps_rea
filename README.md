@@ -72,10 +72,12 @@ CLAUDE.md               rules Claude follows in every session
 .claude/settings.json   permissions + guard hook
 .claude/hooks/          app_guard.py (blocks changes to the analysed apps)
 .claude/protected.json  what the guard protects (paths, keywords, processes, DB services)
-.claude/skills/         new-app inventory schema screens workflow synthesize knowledge checkpoint
-                        tally-xml-export db-schema-dump   (also usable as /name)
+.claude/skills/         analysis: new-app inventory schema screens workflow synthesize knowledge
+                        checkpoint tally-xml-export db-schema-dump
+                        specs: brd acceptance-tests ux-teardown india-validators  (also /name)
 .claude/agents/         clean-room-reviewer, rule-checker
 scripts/clean_room_check.py   pre-commit scan for client data and vendor identifiers
+scripts/traceability_check.py pre-BRD gap check (evidence, capability IDs, matrix, overlaps)
 _templates/app/         skeleton for each app
 _platform/              taxonomy, capability matrix, overlaps, shared domain model, editions, BRD
 <app>/                  clean specs per app (bahikhata/ is the first)

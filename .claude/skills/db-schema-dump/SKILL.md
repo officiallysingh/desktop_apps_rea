@@ -36,7 +36,7 @@ creates a `.ldb/.laccdb` lock file next to it: fine in `_raw/`, never on the ori
 ```bash
 isql -user SYSDBA -password <pwd> -x "_raw/<app>/db-copies/<file>.fdb" > _raw/<app>/dumps/schema-raw.sql
 ```
-If the password is unknown, ask the user; never try to bypass it.
+If the password is unknown, ask the user for it.
 
 ## FoxPro / dBase (.dbf), on a COPY
 ```bash

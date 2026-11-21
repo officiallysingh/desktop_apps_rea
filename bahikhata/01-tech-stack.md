@@ -15,7 +15,7 @@
 - Engine and version:
 - Location / connection:
 - Per-company / per-year files:
-- Encryption / passwords: (note only; do not bypass licence protection)
+- Encryption / passwords: (note what you observe)
 
 ## Install footprint
 - Install dir:
@@ -29,4 +29,4 @@
 | --- | --- | --- |
 
 ## Licensing model (observed behaviour only)
-<trial, activation, per-PC, per-user, dongle — out of scope for analysis>
+<trial, activation, per-PC, per-user, dongle — document the edition model>
